@@ -6,7 +6,7 @@
 ![GitHub Stars](https://img.shields.io/github/stars/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Stars&logo=github)
 ![GitHub Forks](https://img.shields.io/github/forks/P3TERX/Actions-OpenWrt.svg?style=flat-square&label=Forks&logo=github)
 
-A template for building OpenWrt with GitHub Actions
+First of all, you must be familiar with the entire OpenWrt compilation process, which will make it very easy for you to understand how to use GitHub Actions to compile, even if you have not succeeded. Because in fact, nearly 90% of the local compilation failures are caused by network problems, and we dare not say more about the characteristics of mainland China. The GitHub Actions server is provided by Microsoft Azure and has 10 Gigabit bandwidth, which can greatly improve the success rate of compilation. 
 
 ## Usage
 
