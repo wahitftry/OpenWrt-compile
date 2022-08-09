@@ -15,7 +15,3 @@
 sed -i "s/zh_cn/en/g" package/lean/default-settings/files/zzz-default-settings
 sed -i "s/+@LUCI_LANG_zh-cn/+@LUCI_LANG_en/g" package/lean/default-settings/Makefile
 sed -i "/po2lmo ./po/zh-cn/default.po/d" package/lean/default-settings/Makefile
-uci -q batch <<-EOF >/dev/null
-	set luci.main.lang=zh_cn
-	commit luci
-EOF
