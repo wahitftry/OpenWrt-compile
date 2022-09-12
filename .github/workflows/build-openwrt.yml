@@ -86,8 +86,12 @@ jobs:
       run: |
         echo -e "$(nproc) thread build."
         make -j$(nproc) V=s
+    - name: Organize artifact
+      run: |
+        cd openwrt/bin/targets/*/*
+        rm -rf packages
     - name : Upload artifact
       uses: actions/upload-artifact@master
       with:
         name: OpenWrt
-        path: openwrt/bin
+        path: openwrt/bin/targets/*/*
